@@ -1,0 +1,331 @@
+/* HEADER */
+.cabecera {
+    width: 103%;
+    height: 105px;
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -27px;
+    left: -20px;
+    font-family: 'Borel', cursive;
+    color: rgb(16, 124, 59);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+    font-size: 20px;
+}
+
+/*  */
+.backgroundVida {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(
+        to bottom,
+        #4f9da6 0%, /* Un azul verdoso, tranquilo y relacionado con la salud */
+        #6ac4a5 50%, /* Un tono verde claro, refrescante y natural */
+        #e0d9b2 100% /* Un tono beige suave, añadiendo calidez */
+    );
+    color: #ffffff; /* Texto blanco para un buen contraste */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra de texto para mejorar la legibilidad */
+}
+
+
+.descripcionCartelera {
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    text-align: center;
+    padding: 0%;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+}
+
+.cartelera {
+    gap: 15px;
+    display: grid;
+    padding-top: 50px;
+    margin-top: 140px;
+    margin-right: 150px;
+    float: right;
+    padding: 10px;
+    width: 26.65%;
+    background-color: rgba(242, 242, 242, 0.7);
+    height: 70%;
+    box-shadow: 0px 0px 30px #DDD;
+    border-radius: 5%;
+
+}
+
+.pantalla {
+    width: 55%;
+    height: 720px;
+    float: left;
+    padding-top: 15px;
+    position: relative;
+    left: -215px;
+    display: block;
+    left: 100px;
+
+}
+
+.reproductor {
+    height: 692px;
+    left: -20px;
+    display: block;
+    top: -28px;
+    width: 103%;
+    position: relative;
+}
+
+#boton1 {
+    justify-self: center;
+    background-color: rgba(242, 242, 242, 0.7);
+    font-family: 'EraserDust', sans-serif;
+    color: rgb(71, 10, 93);
+    font-size: 23px;
+    width: 60%;
+    visibility: hidden;
+}
+
+h1 {
+    padding-top: 0.75cm;
+}
+
+#video {
+    height: 700px;
+    padding-top: 40px;
+    width: 100%;
+    max-height: 650px;
+}
+
+
+
+#interaccionVideo {
+    padding-left: 20px; /* Ajuste para alinear con el diseño general */
+    display: flex; /* Usar flexbox para una mejor alineación y distribución de los controles */
+    align-items: center;
+    gap: 10px; /* Espacio entre los controles */
+}
+
+progress {
+    accent-color: rgb(251, 171, 91);
+    background-color: rgb(194, 255, 189);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35) inset;
+    cursor: pointer;
+}
+
+#iniciarReproduccion {
+    border-radius: 100%;
+    height: 40px;
+}
+
+
+
+.interaccionVideo input[type='button'] {
+    border: none;
+    background-color: #ddd; /* Color neutro */
+    color: #333; /* Color de texto oscuro para contraste */
+    font-size: 16px; /* Tamaño de texto adecuado */
+    padding: 10px 15px; /* Padding para un tamaño adecuado de los botones */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+.interaccionVideo input[type='button']:hover {
+    background-color: #ccc; /* Cambio de color al pasar el mouse */
+}
+
+.interaccionVideo #barraReproduccion {
+    width: 100%; /* Barra de progreso se extiende a lo largo del contenedor */
+    height: 5px; /* Altura adecuada para la barra de progreso */
+    border-radius: 5px; /* Bordes ligeramente redondeados para la barra de progreso */
+}
+
+.interaccionVideo #volverAreproducir,
+.interaccionVideo #volverAlPrincipio {
+    display: block; /* Asegurarse de que los botones sean visibles */
+    width: auto; /* Tamaño automático basado en el contenido */
+    height: auto;
+}
+
+/* Ocultar controles adicionales que no sean necesarios */
+.volverAreproducir,
+#volverAlPrincipio {
+    display: none;
+}
+
+.linkJirafas,
+.textoverlay4,
+.linkSangre {
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+
+}
+
+.textoverlay5 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'EraserDust', sans-serif;
+    color: rgb(90, 0, 149);
+
+}
+
+.textoverlay6 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'EraserDust', sans-serif;
+    color: rgb(90, 0, 149);
+
+}
+
+.textoverlay7 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'EraserDust', sans-serif;
+    color: rgb(90, 0, 149);
+
+}
+
+.textoverlay8 {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'EraserDust', sans-serif;
+    color: rgb(90, 0, 149);
+
+}
+
+.textoverlay {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'EraserDust', sans-serif;
+    color: rgb(90, 0, 149);
+
+}
+
+#answer9 {
+    cursor: pointer;
+    margin-left: 4.75cm;
+    margin-bottom: 0.5cm;
+    border-radius: 20px;
+    height: 1cm;
+    width: 3cm;
+    font-size: 20px;
+    font-family: 'EraserDust', sans-serif;
+    color: rgb(72, 4, 90);
+    background-color: rgba(242, 242, 242, 0.7);
+    border-color: rgb(116, 23, 209);
+
+}
+
+#answerEscrita {
+    font-size: 25px;
+    font-family: 'EraserDust', sans-serif;
+    margin-left: 0.5cm;
+    background-color: rgba(242, 242, 242, 0.7);
+    border-color: rgb(116, 23, 209);
+    height: 1.75cm;
+    width: 6.5cm;
+}
+
+
+.overlay {
+    border-radius: 20px;
+    position: absolute;
+    top: 11.5cm;
+    background-color: rgba(242, 242, 242, 0.7);
+    right: 1.5cm;
+
+}
+
+.overlay2 {
+
+    border-radius: 20px;
+    position: absolute;
+    top: 2.5cm;
+    background-color: rgba(242, 242, 242, 0.7);
+    right: 1.5cm;
+
+}
+
+
+#volverAreproducir {
+
+    border-radius: 100%;
+    margin-right: 0.5cm;
+    margin-bottom: 0.5cm;
+    margin-left: 0.5cm;
+    background-color: rgb(100, 0, 139);
+    height: 4.5cm;
+    width: 4.5cm;
+    cursor: pointer;
+
+}
+
+#volverAlPrincipio {
+    border-radius: 100%;
+    height: 3cm;
+    width: 3cm;
+}
+
+#linkJirafas,
+.linkSangre,
+.opcionQuiz,
+.opcionQuiz2,
+.opcionQuiz3,
+.volverAreproducir {
+    display: none;
+}
+
+.sendAnswer {
+    display: none;
+}
+
+.opcionQuiz,
+.opcionQuiz2,
+.opcionQuiz3 {
+    height: 3cm;
+    width: 5cm;
+    font-family: 'EraserDust', sans-serif;
+    font-size: 30px;
+    background-color: rgb(159, 81, 214);
+    border-radius: 15px;
+    color: rgb(71, 10, 93);
+    border-color: rgb(116, 23, 209);
+    cursor: pointer;
+}
+
+.opcionQuiz:hover {
+    background-color: #852a38
+}
+
+.opcionQuiz2:hover {
+    background-color: #852a38
+}
+
+.opcionQuiz3:hover {
+    background-color: #852a38
+}
+
+#answer3,
+#answer4,
+#answer7,
+#answer8,
+#answer12,
+#answer13 {
+    float: right;
+}
+
+#answer1,
+#answer2,
+#answer5,
+#answer6,
+#answer10,
+#answer11 {
+    float: left;
+}

@@ -1,0 +1,331 @@
+/* HEADER */
+.cabecera {
+    width: 103%;
+    height: 105px;
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -27px;
+    left: -20px;
+    font-family: 'Borel', cursive;
+    color: rgb(47, 86, 185);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+    font-size: 20px;
+}
+
+
+.backgroundVida {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(
+        to bottom,
+        #a2e1db 0%, 
+        #86a8e7 50%, 
+        #d16ba5 100% 
+    );
+    color: #ffffff; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+}
+
+.descripcionCartelera {
+    font-size: 23px;
+    font-family: 'Borel', cursive;
+    text-align: center;
+    padding: 0%;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+}
+
+.cartelera {
+    gap: 15px;
+    display: grid;
+    padding-top: 50px;
+    margin-top: 140px;
+    margin-right: 150px;
+    float: right;
+    padding: 10px;
+    width: 26.65%;
+    background-color: rgba(242, 242, 242, 0.7);
+    height: 70%;
+    box-shadow: 0px 0px 30px #DDD;
+    border-radius: 5%;
+
+}
+
+.pantalla {
+    width: 55%;
+    height: 720px;
+    float: left;
+    padding-top: 15px;
+    position: relative;
+    left: -215px;
+    display: block;
+    left: 100px;
+
+}
+
+.reproductor {
+    height: 692px;
+    left: -20px;
+    display: block;
+    top: -28px;
+    width: 103%;
+    position: relative;
+}
+
+
+
+h1 {
+    padding-top: 0.75cm;
+}
+
+#video {
+    height: 700px;
+    padding-top: 40px;
+    width: 100%;
+    max-height: 650px;
+}
+
+
+
+#interaccionVideo {
+    padding-left: 20px; 
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+}
+
+progress {
+    accent-color: rgb(251, 171, 91);
+    background-color: rgb(194, 255, 189);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35) inset;
+    cursor: pointer;
+}
+
+#iniciarReproduccion {
+    border-radius: 100%;
+    height: 40px;
+}
+
+
+
+.interaccionVideo input[type='button'] {
+    border: none;
+    background-color: #ddd; 
+    color: #333; 
+    font-size: 16px; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.interaccionVideo input[type='button']:hover {
+    background-color: #ccc; 
+}
+
+.interaccionVideo #barraReproduccion {
+    width: 100%; 
+    height: 5px; 
+    border-radius: 5px; 
+}
+
+.interaccionVideo #volverAreproducir,
+.interaccionVideo #volverAlPrincipio {
+    display: block; 
+    width: auto; 
+    height: auto;
+}
+
+
+.volverAreproducir,
+#volverAlPrincipio {
+    display: none;
+}
+
+.linkJirafas,
+.textoverlay4,
+.linkSangre {
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+
+}
+/* AGRUPAR DESPUES TODOS ESTOS OVERLAYS */
+.textoverlay5 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+
+}
+
+.textoverlay6 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+
+}
+
+.textoverlay7 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+
+}
+
+.textoverlay8 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+
+}
+
+.textoverlay {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+
+}
+
+
+
+#answer9 {
+    cursor: pointer;
+    margin-left: 4.75cm;
+    margin-bottom: 0.5cm;
+    border-radius: 20px;
+    height: 1cm;
+    width: 3cm;
+    font-size: 17px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+    background-color: rgba(242, 242, 242, 0.7);
+    
+
+}
+
+#answerEscrita {
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+    margin-left: 0.5cm;
+    background-color: rgba(242, 242, 242, 1);
+    height: 1.75cm;
+    width: 6.5cm;
+}
+
+
+.overlay {
+    border-radius: 20px;
+    position: absolute;
+    top: 11.5cm;
+    background-color: rgba(242, 242, 242, 1);
+    right: 1.5cm;
+
+}
+
+.overlay2 {
+
+    border-radius: 20px;
+    position: absolute;
+    top: 2.5cm;
+    background-color: rgba(242, 242, 242, 1);
+    right: 1.5cm;
+
+}
+
+
+#volverAreproducir {
+
+    border-radius: 100%;
+    margin-right: 0.5cm;
+    margin-bottom: 0.5cm;
+    margin-left: 0.5cm;
+    background-color: rgb(100, 0, 139);
+    height: 4.5cm;
+    width: 4.5cm;
+    cursor: pointer;
+
+}
+
+#volverAlPrincipio {
+    border-radius: 100%;
+    height: 3cm;
+    width: 3cm;
+}
+
+#linkJirafas,
+.linkSangre,
+.opcionQuiz,
+.opcionQuiz2,
+.opcionQuiz3,
+.volverAreproducir {
+    display: none;
+}
+
+.sendAnswer {
+    display: none;
+}
+
+.opcionQuiz,
+.opcionQuiz2,
+.opcionQuiz3 {
+    height: 3cm;
+    width: 5cm;
+    background-color: rgba(242, 242, 242, 0.7);
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Borel', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 2px;
+    cursor: pointer;
+}
+
+.opcionQuiz:hover {
+    background-color: #852a38
+}
+
+.opcionQuiz2:hover {
+    background-color: #852a38
+}
+
+.opcionQuiz3:hover {
+    background-color: #852a38
+}
+
+#answer3,
+#answer4,
+#answer7,
+#answer8,
+#answer12,
+#answer13 {
+    float: right;
+}
+
+#answer1,
+#answer2,
+#answer5,
+#answer6,
+#answer10,
+#answer11 {
+    float: left;
+}

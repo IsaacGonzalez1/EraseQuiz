@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>Erase una vez el Hombre</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/hombre.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/eraser-dust" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./js/vida.js"></script>
+    <script src="./js/reproducir.js"></script>
+
+
+</head>
+
+<body>
+    <div class="backgroundVida">
+        <header>
+
+            <div class="cabecera">
+                <h1>Érase una vez el hombre</h1>
+            </div>
+
+        </header>
+        <div class="reproductor">
+
+            <div class="cartelera">
+                <p class="descripcionCartelera">
+                    Embárcate en un emocionante viaje educativo con nuestro quiz basado en "Érase una vez el Hombre".
+                    Este video te llevará en un recorrido interactivo a lo largo de la historia de la humanidad, donde aprenderás sobre diferentes épocas, civilizaciones y eventos de manera divertida.
+                    <br>
+                    A través de animaciones cautivadoras y preguntas desafiantes, entenderás la evolución de la humanidad y explorarás momentos clave de nuestra historia.
+                </p>
+
+               
+
+            </div>
+
+            <div class="pantalla">
+
+                <video id="video">
+
+                    <source src="./Assets/videos/El Fuego.mp4">
+
+                </video>
+
+                <div class="overlay">
+
+                    <p class="textoverlay"></p>
+
+                    <!--ENLACES-->
+                    <a href="https://kidshealth.org/es/kids/blood.html" class="linkSangre"></a>
+                    <a href="https://www.elespanol.com/curiosidades/naturaleza-planeta-tierra/curiosidades-jirafas/515948948_0.amp.html" class="linkJirafas"></a>
+
+                    <!--PREGUNTA 1-->
+                    <button id="answer1" class="opcionQuiz">Elefante Africano</button>
+                    <button id="answer2" class="opcionQuiz">Ballena Boreal</button>
+                    <button id="answer3" class="opcionQuiz">Jirafa</button>
+                    <button id="answer4" class="opcionQuiz">Ballena Azul</button>
+
+                    <!--PREGUNTA 2-->
+                    <button id="answer5" class="opcionQuiz2">50 días</button>
+                    <button id="answer6" class="opcionQuiz2">20 días</button>
+                    <button id="answer7" class="opcionQuiz2">4 días</button>
+                    <button id="answer8" class="opcionQuiz2">2 meses</button>
+
+                    <!--PREGUNTA 3-->
+                    <input id="answerEscrita" class="sendAnswer" type="text">
+                    <br>
+                    <button id="answer9" class="sendAnswer">Comprobar</button>
+
+                    <!--PREGUNTA 4-->
+                    <button id="answer10" class="opcionQuiz3">Elefante</button>
+                    <button id="answer11" class="opcionQuiz3">Ardilla</button>
+                    <button id="answer12" class="opcionQuiz3">Pantera Negra</button>
+                    <button id="answer13" class="opcionQuiz3">Ciervo</button>
+
+                </div>
+
+                <div class="overlay2">
+                    <p class="textoverlay4"></p>
+                    <p class="textoverlay5"></p>
+                    <p class="textoverlay6"></p>
+                    <p class="textoverlay7"></p>
+                    <p class="textoverlay8"></p>
+                </div>
+
+
+                <div id="interaccionVideo" class="interaccionVideo">
+
+                    <input type="button" id="iniciarReproduccion" class="menuVideo" value="&#9658;">
+
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="button" id="volverAtras" class="menuVideo" value="&#x23ea;">
+                    <progress id='barraReproduccion' min='0' max='100' value='0'></progress>
+                    <input type="button" id="avanzar" class="menuVideo" value="&#x23e9;">
+                    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <strong>Ajustes de sonido:&nbsp;</strong>
+                    <input type="button" id="bajarSonido" class="menuVideo" value="&#x1F569;">
+                    <input type="button" id="aumentarSonido" class="menuVideo" value="&#x1F56A;">
+                    <input type="button" id="quitarSonido" class="menuVideo" value="&#x1F507;">
+                    <input type="button" id="repetir" class="menuVideo" value="&#x1F503;">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
